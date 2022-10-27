@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<form (ngSubmit)="onSubmit()">
+  <input type="hidden" name="size" value="1000000">
+  <div>
+    <input type="file" name="image" (change)="onFileSelected($event)">
+  </div>
+  <div>
+    <input id="textauthor" name="name" placeholder="Name">
+    <button type="submit" name="upload">POST</button>
+  </div>
+</form>
